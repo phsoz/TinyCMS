@@ -15,5 +15,12 @@ namespace TinyCMS.Domain.Entities
         public DateTime? PublishedAt { get; set; }
         public string Content { get; set; }
 
+        public IList<PostComment> Comments { get; set; }
+        public IList<PostMeta> Metas { get; set; }
+        public IList<PostCategory> PostCategories { get; set; }
+        public IList<PostTag> PostTags { get; set; }
+        public User Author { get; set; }
+        public Post ParentPost { get; set; }
+        public IList<Post> ChildPosts { get; set; }
     }
 }

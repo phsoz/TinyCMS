@@ -7,5 +7,6 @@ namespace TinyCMS.Domain.Entities
         public long PostId { get; set; }
         public string Key { get; set; }
         public string Content { get; set; }
+        public Post Post { get; set; }
     }
 }

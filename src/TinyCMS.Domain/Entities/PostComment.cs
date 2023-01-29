@@ -10,5 +10,8 @@ namespace TinyCMS.Domain.Entities
         public bool Published { get; set; }
         public DateTime? PublishedAt { get; set; }
         public string Content { get; set; }
+        public Post Post { get; set; }
+        public PostComment ParentComment { get; set; }
+        public IList<PostComment> ChildComments { get; set; }
     }
 }

@@ -8,5 +8,6 @@ namespace TinyCMS.Domain.Entities
         public string MetaTitle { get; set; }
         public string Slug { get; set; }
         public string Content { get; set; }
+        public IList<PostTag> PostTags { get; set; }
     }
 }
