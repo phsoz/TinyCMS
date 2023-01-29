@@ -6,10 +6,15 @@ namespace TinyCMS.Infrastructure.Persistence
 {
     public partial class TinyDatabaseContext : DbContext
     {
-
+        private static bool _created = false;
         public TinyDatabaseContext(DbContextOptions<TinyDatabaseContext> options) : base(options)
         {
-
+            if (!_created)
+            {
+                _created = true;
+                Database.EnsureDeleted();
+                Database.EnsureCreated();
+            }
         }
 
         public DbSet<Post> Posts { get; set; }
