@@ -5,6 +5,12 @@
     <ProjectReference Include="..\TinyCMS.Infrastructure\TinyCMS.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extentions\" />
+    <Folder Include="Mapping\" />
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
