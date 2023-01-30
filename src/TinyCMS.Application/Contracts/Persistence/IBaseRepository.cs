@@ -16,11 +16,11 @@ namespace TinyCMS.Application.Contracts.Persistence
                                         Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null,
                                         List<Expression<Func<T, object>>> includes = null,
                                         bool disableTracking = true);
-        Task<T> GetByIdAsync(int id);
-        Task<T> AddAsync(int id);
+        Task<T> GetByIdAsync(long id);
+        Task<T> AddAsync(T entity);
         Task UpdateAsync(T entity);
         Task MultipleUpdateAsync(IReadOnlyList<T> lstEntity);
-        Task<bool> DeleteAsync(T entity);
+        Task DeleteAsync(T entity);
         Task MultipleDeleteAsync(IReadOnlyList<T> lstEntity);
         Task<int> SaveChangeAsync();
     }
