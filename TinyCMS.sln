@@ -5,21 +5,20 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{FB444879-9C66-4608-B94D-E1582BC5E9FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyCMS.Application", "src\TinyCMS.Application\TinyCMS.Application.csproj", "{227C3813-F9EF-4B54-98BE-11A177CA2A50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyCMS.Application", "src\TinyCMS.Application\TinyCMS.Application.csproj", "{227C3813-F9EF-4B54-98BE-11A177CA2A50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyCMS.Infrastructure", "src\TinyCMS.Infrastructure\TinyCMS.Infrastructure.csproj", "{EB9BA278-E948-44AC-BA5F-98F696DE4470}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyCMS.Infrastructure", "src\TinyCMS.Infrastructure\TinyCMS.Infrastructure.csproj", "{EB9BA278-E948-44AC-BA5F-98F696DE4470}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyCMS.Web", "src\TinyCMS.Web\TinyCMS.Web.csproj", "{D73CA5EC-B69D-44CB-AA7A-8105AAD89B76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyCMS.Web", "src\TinyCMS.Web\TinyCMS.Web.csproj", "{D73CA5EC-B69D-44CB-AA7A-8105AAD89B76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyCMS.Domain", "src\TinyCMS.Domain\TinyCMS.Domain.csproj", "{FF213305-A415-4961-88F3-47948EB734B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyCMS.Domain", "src\TinyCMS.Domain\TinyCMS.Domain.csproj", "{FF213305-A415-4961-88F3-47948EB734B6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TinyCMS.Admin", "src\TinyCMS.Admin\TinyCMS.Admin.csproj", "{9EA25F3C-07D5-4733-A54B-A9DBD28D4F54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{227C3813-F9EF-4B54-98BE-11A177CA2A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -38,11 +37,22 @@ Global
 		{FF213305-A415-4961-88F3-47948EB734B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF213305-A415-4961-88F3-47948EB734B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF213305-A415-4961-88F3-47948EB734B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA25F3C-07D5-4733-A54B-A9DBD28D4F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA25F3C-07D5-4733-A54B-A9DBD28D4F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA25F3C-07D5-4733-A54B-A9DBD28D4F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA25F3C-07D5-4733-A54B-A9DBD28D4F54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{227C3813-F9EF-4B54-98BE-11A177CA2A50} = {FB444879-9C66-4608-B94D-E1582BC5E9FC}
 		{EB9BA278-E948-44AC-BA5F-98F696DE4470} = {FB444879-9C66-4608-B94D-E1582BC5E9FC}
 		{D73CA5EC-B69D-44CB-AA7A-8105AAD89B76} = {FB444879-9C66-4608-B94D-E1582BC5E9FC}
 		{FF213305-A415-4961-88F3-47948EB734B6} = {FB444879-9C66-4608-B94D-E1582BC5E9FC}
+		{9EA25F3C-07D5-4733-A54B-A9DBD28D4F54} = {FB444879-9C66-4608-B94D-E1582BC5E9FC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8860A48-C469-4762-A8CF-849572020619}
 	EndGlobalSection
 EndGlobal
