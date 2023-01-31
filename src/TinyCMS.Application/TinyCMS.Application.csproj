@@ -10,11 +10,14 @@
     <Folder Include="Constants\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Extentions\" />
-    <Folder Include="Features\" />
     <Folder Include="Mappings\" />
     <Folder Include="Models\" />
-    <Folder Include="Services\" />
     <Folder Include="Payloads\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
   </ItemGroup>
 
   <PropertyGroup>
