@@ -15,6 +15,7 @@ public static class InfrastructureServiceRegistration
         services.AddDbContext<TinyDatabaseContext>(options =>
             options.UseSqlite(configuration.GetConnectionString("TinyDatabase")));
 
+
         services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
         services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));

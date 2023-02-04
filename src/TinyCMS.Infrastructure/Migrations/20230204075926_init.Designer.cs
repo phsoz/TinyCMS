@@ -11,8 +11,8 @@ using TinyCMS.Infrastructure.Persistence;
 namespace TinyCMS.Infrastructure.Migrations
 {
     [DbContext(typeof(TinyDatabaseContext))]
-    [Migration("20230129163435_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230204075926_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
