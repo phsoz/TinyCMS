@@ -2,7 +2,7 @@
 
 namespace TinyCMS.Application.Contracts.Persistence
 {
-    public interface IUserRepository : IBaseRepository<User>
+    public interface IUserRepository
     {
     }
 }

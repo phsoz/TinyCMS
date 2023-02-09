@@ -4,10 +4,10 @@ using TinyCMS.Infrastructure.Persistence;
 
 namespace TinyCMS.Infrastructure.Repositories
 {
-    public class UserRepository : BaseRepository<User>, IUserRepository
+    public class UserRepository : IUserRepository
     {
-        public UserRepository(TinyDatabaseContext dbContext) : base(dbContext)
-        {
-        }
+        //public UserRepository(TinyDatabaseContext dbContext) : base(dbContext)
+        //{
+        //}
     }
 }

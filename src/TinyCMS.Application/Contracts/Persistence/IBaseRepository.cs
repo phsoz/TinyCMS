@@ -1,4 +1,5 @@
-﻿using System.Linq.Expressions;
+﻿using Microsoft.AspNetCore.Identity;
+using System.Linq.Expressions;
 using TinyCMS.Domain.Common;
 
 namespace TinyCMS.Application.Contracts.Persistence

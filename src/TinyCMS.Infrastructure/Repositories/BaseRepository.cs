@@ -8,8 +8,8 @@ namespace TinyCMS.Infrastructure.Repositories
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : BaseEntity
     {
-        protected readonly TinyDatabaseContext _dbContext;
-        public BaseRepository(TinyDatabaseContext dbContext)
+        protected readonly ApplicationDbContext _dbContext;
+        public BaseRepository(ApplicationDbContext dbContext)
         {
             _dbContext = dbContext;
         }

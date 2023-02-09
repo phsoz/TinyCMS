@@ -6,7 +6,7 @@ namespace TinyCMS.Infrastructure.Repositories
 {
     public class TagRepository : BaseRepository<Tag>, ITagRepository
     {
-        public TagRepository(TinyDatabaseContext dbContext) : base(dbContext)
+        public TagRepository(ApplicationDbContext dbContext) : base(dbContext)
         {
         }
     }

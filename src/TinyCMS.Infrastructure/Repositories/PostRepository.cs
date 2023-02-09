@@ -6,7 +6,7 @@ namespace TinyCMS.Infrastructure.Repositories
 {
     public class PostRepository : BaseRepository<Post>, IPostRepository
     {
-        public PostRepository(TinyDatabaseContext dbContext) : base(dbContext)
+        public PostRepository(ApplicationDbContext dbContext) : base(dbContext)
         {
         }
     }
